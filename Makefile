@@ -75,3 +75,8 @@ CONTROLLER_GEN=$(GOBIN)/controller-gen
 else
 CONTROLLER_GEN=$(shell which controller-gen)
 endif
+
+.PHONY: chart
+chart:
+	helm package chart/kubernetes-cronhpa-controller
+	helm repo index .

@@ -1,3 +1,6 @@
+nameOverride: ""
+fullnameOverride: ""
+
 cleanup:
   cleanupCustomResource: false
   image: registry.cn-beijing.aliyuncs.com/acs/hyperkube:v1.12.1
